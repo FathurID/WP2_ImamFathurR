@@ -18,7 +18,7 @@
 
 <body>
     <center>
-        <form   action="<?=    base_url('matakuliah/cetak'); ?>"method="post">
+        <form   action="<?=    base_url('matakuliah/cetak'); ?>" method="post">
             <table>
                 <tr>
                     <th colspan="3">
@@ -36,6 +36,7 @@
                 <td>
                     <input type="text"  name="kode" id="kode">
                 </td>
+                <div class="col-sm-6 col-danger"> <?= form_error('kode');?></div>
             </tr>
             <tr>
                 <th>Nama MTK</th>
@@ -43,6 +44,7 @@
                 <td>
                     <input type="text" name="nama" id="nama">
                 </td>
+                <div class="col-sm-6 col-danger"> <?= form_error('nama');?></div>
             </tr>
             <tr>
                 <th>SKS</th>
