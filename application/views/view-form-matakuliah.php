@@ -57,6 +57,7 @@
                         <option value="4">4</option>
                     </select>
                 </td>
+                <div class="col-sm-6 col-danger"> <?= form_error('sks');?></div>
             </tr>
             <tr>
                 <td colspan="3" align="center">
