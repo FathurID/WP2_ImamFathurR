@@ -5,7 +5,7 @@ class User extends CI_Controller
     public function __construct()
     {
         parent::__construct();
-        cek_login();
+        //cek_login();
     }
     
     public function index()
@@ -34,8 +34,7 @@ class User extends CI_Controller
 public function ubahProfil()
 {
 $data['judul'] = 'Ubah Profil';
-$data['user'] = $this->ModelUser->cekData(['email' => $this-
->session->userdata('email')])->row_array();
+$data['user'] = $this->ModelUser->cekData(['email' => $this->session->userdata('email')])->row_array();
 $this->form_validation->set_rules('nama', 'Nama Lengkap', 
 'required|trim', [
 'required' => 'Nama tidak Boleh Kosong'
